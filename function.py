@@ -1,5 +1,5 @@
 def lambda_handler(event, context):
     return {
-        "statusCode": 201,
+        "statusCode": 200,
         'body': 'Hello from Lambda!'
     }
