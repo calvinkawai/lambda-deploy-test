@@ -5,7 +5,7 @@ phases:
       - zip my-deployment-package.zip function.py
   build:
     commands:
-      - aws cloudformation package --template-file unpacked.yaml --s3-bucket lambda-pipeline-test --output-template-file packed.yaml
+      - aws cloudformation package --template-file unpacked.yaml --s3-bucket "" --output-template-file packed.yaml
 artifacts:
   files:
   - unpacked.yaml
