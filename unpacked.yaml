@@ -7,5 +7,3 @@ Resources:
         Handler: lambda_function.lambda_handler
         CodeUri: ./my-deployment-package.zip
         PackageType: Zip
-configuration:
-  Capabilities: CAPABILITY_AUTO_EXPAND
