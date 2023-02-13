@@ -2,7 +2,7 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - zip my-deployment-package.zip function.py
+      - zip my-deployment-package.zip lambda_function.py
   build:
     commands:
       - aws cloudformation package --template-file unpacked.yaml --s3-bucket codepipeline-us-east-1-142008470299 --output-template-file packed.yaml
