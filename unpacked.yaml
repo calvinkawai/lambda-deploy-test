@@ -3,7 +3,10 @@ Resources:
   DemoServerless:
     Type: AWS::Serverless::Function
     Properties:
-        Runtime: python3.9
+        Runtime: python3.7
         Handler: lambda_function.lambda_handler
         CodeUri: ./my-deployment-package.zip
         PackageType: Zip
+        FileSystemConfigs:
+        Layers:
+        MemorySize: 
